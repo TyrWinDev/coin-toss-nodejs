@@ -5,43 +5,16 @@
 //     otherwise,
 //         Tell the user that they lost
 
-// "use strict";
-
-// const readline = require("readline");
-// const rl = readline.createInterface(process.stdin, process.stdout);
-
-
-// let coinToss = (userChoice) => {
-//     // coin toss logic goes here
-//     let outcome = "tails"
-//     if (Math.random() > 0.5) {
-//         outcome = "heads"
-//     }
-
-//     // userChoice logic goes here
-//     if (outcome == userChoice) {
-//         console.log("You won the toss!")
-//     } else {
-//         console.log("You lost the toss!")
-//     }
-
-//     let message = "Type h for Heads, or t for Tails, then press Enter"
-
-//     rl.question(message, (answer) => {
-//         rl.close();
-//     })
-// }
-
 "use strict";
 const readline = require("readline");
 const rl = readline.createInterface(process.stdin, process.stdout);
 let coinToss = (userChoice) => {
-
+// coin toss logic goes here
 let outcome = "t";
   if (Math.random() > 0.5) {
     outcome = "h"
   }
-
+// userChoice logic goes here
   if (outcome == userChoice) {
     console.log("You won the toss!");
   } else {
